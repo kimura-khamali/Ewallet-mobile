@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val onWallet3 = OnWallet("dbskj", "nkk", "n n", "dd", "dc", "cdc", "cwq","cdcdc","ce","30000","03-04-2040", "c", "100.000")
         val onWallet4 = OnWallet("dsakj", "kmj", "fgfs", "fdd", "dc", "dcdcd", "dds","ddc","xcc","30000","03-04-2040", "fcf", "100.000")
         val onWallet5 = OnWallet(" k k", "k k", "ddf", "df", "df", "dc", "ddd","","dd","30000","03-04-2040", "f", "100.000")
-        val onWallet6 = OnWallet("k ", " k k", "dffd", "ddd", "ccd", "dds", "df","","dd","30000","03-04-2040", "fd", "100.000")
+        val onWallet6 = OnWallet("k", " kk", "dffd", "ddd", "ccd", "dds", "df","","dd","30000","03-04-2040", "fd", "100.000")
 
 
         val ewalletList= listOf(onWallet1,onWallet2,onWallet3,onWallet4,onWallet5,onWallet6)

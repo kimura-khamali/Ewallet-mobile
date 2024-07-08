@@ -3,13 +3,11 @@ package com.brendakhamali.ewallet
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-// Assuming there is a data class named `EwalletItem`
-// data class EwalletItem(...)
-
-class EwalletAdapter(val ewalletList: List<OnWallet>) :
+class EwalletAdapter(private val ewalletList: List<OnWallet>) :
     RecyclerView.Adapter<EwalletViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EwalletViewHolder {
@@ -19,40 +17,43 @@ class EwalletAdapter(val ewalletList: List<OnWallet>) :
 
     override fun onBindViewHolder(holder: EwalletViewHolder, position: Int) {
         val ewalletItem = ewalletList[position]
-        // Assuming EwalletItem has properties corresponding to the TextView fields
-        holder.moneyintext.text = ewalletItem.moneyInText
-        holder.moneyinamount.text = ewalletItem.moneyInAmount
-        holder.moneyouttxt.text = ewalletItem.moneyOutText
-        holder.moneyoutamount.text = ewalletItem.moneyOutAmount
-        holder.balancetxt.text = ewalletItem.balanceText
-        holder.balanceamount.text = ewalletItem.balanceAmount
-        holder.transactiontxt.text = ewalletItem.transactionText
-        holder.transactionamount.text = ewalletItem.transactionAmount
-        holder.dollartxt.text = ewalletItem.dollarText
-        holder.dollaramount.text = ewalletItem.dollarAmount
-        holder.dollardate.text = ewalletItem.dollarDate
-        holder.salaryoratxt.text = ewalletItem.salaryOraText
-        holder.salaryamount.text = ewalletItem.salaryAmount
+        holder.apply {
+            moneyInLabel.text = ewalletItem.moneyInText
+            moneyInAmount.text = ewalletItem.moneyInAmount
+            moneyOutLabel.text = ewalletItem.moneyOutText
+            moneyOutAmount.text = ewalletItem.moneyOutAmount
+            balanceLabel.text = ewalletItem.balanceText
+            balanceAmount.text = ewalletItem.balanceAmount
+            transactionsLabel.text = ewalletItem.transactionText
+            transactionsAmount.text = ewalletItem.transactionAmount
+            salaryLabel.text = ewalletItem.salaryOraText
+            salaryAmount.text = ewalletItem.salaryAmount
+//            salaryDate.text = ewalletItem.s
+        }
     }
 
-    override fun getItemCount(): Int {
-        return ewalletList.size
-    }
+    override fun getItemCount(): Int = ewalletList.size
 }
 
 class EwalletViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    val moneyintext: TextView = itemView.findViewById(R.id.moneyintext)
-    val moneyinamount: TextView = itemView.findViewById(R.id.moneyinamount)
-    val moneyouttxt: TextView = itemView.findViewById(R.id.moneyouttxt)
-    val moneyoutamount: TextView = itemView.findViewById(R.id.moneyoutamount)
-    val balancetxt: TextView = itemView.findViewById(R.id.balancetxt)
-    val balanceamount: TextView = itemView.findViewById(R.id.balanceamount)
-    val transactiontxt: TextView = itemView.findViewById(R.id.transactiontxt)
-    val transactionamount: TextView = itemView.findViewById(R.id.transactionamount)
-    val dollartxt: TextView = itemView.findViewById(R.id.dollartxt)
-    val dollaramount: TextView = itemView.findViewById(R.id.dollaramount)
-    val dollardate: TextView = itemView.findViewById(R.id.dollardate)
-    val salaryoratxt: TextView = itemView.findViewById(R.id.salaryoratxt)
-    val salaryamount: TextView = itemView.findViewById(R.id.salaryamount)
-}
+    val moneyInIcon: ImageView = itemView.findViewById(R.id.moneyInIcon)
+    val moneyInLabel: TextView = itemView.findViewById(R.id.moneyInLabel)
+    val moneyInAmount: TextView = itemView.findViewById(R.id.moneyInAmount)
 
+    val moneyOutIcon: ImageView = itemView.findViewById(R.id.moneyOutIcon)
+    val moneyOutLabel: TextView = itemView.findViewById(R.id.moneyOutLabel)
+    val moneyOutAmount: TextView = itemView.findViewById(R.id.moneyOutAmount)
+
+    val balanceIcon: ImageView = itemView.findViewById(R.id.balanceIcon)
+    val balanceLabel: TextView = itemView.findViewById(R.id.balanceLabel)
+    val balanceAmount: TextView = itemView.findViewById(R.id.balanceAmount)
+
+    val transactionsIcon: ImageView = itemView.findViewById(R.id.transactionsIcon)
+    val transactionsLabel: TextView = itemView.findViewById(R.id.transactionsLabel)
+    val transactionsAmount: TextView = itemView.findViewById(R.id.transactionsAmount)
+
+    val salaryIcon: ImageView = itemView.findViewById(R.id.salaryIcon)
+    val salaryLabel: TextView = itemView.findViewById(R.id.salaryLabel)
+    val salaryAmount: TextView = itemView.findViewById(R.id.salaryAmount)
+//    val salaryDate: TextView = itemView.findViewById(R.id.salaryDate)
+}
