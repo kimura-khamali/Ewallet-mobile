@@ -2,19 +2,20 @@ package com.brendakhamali.ewallet
 
 data class OnWallet(
 
-    val moneyInText: String,
-    val moneyInAmount: String,
-    val moneyOutText: String,
-    val moneyOutAmount: String,
-    val balanceText: String,
-    val balanceAmount: String,
-    val transactionText: String,
-    val transactionAmount: String,
-    val dollarText: String,
-    val dollarAmount: String,
-    val dollarDate: String,
+//    val moneyInText: String,
+//    val moneyInAmount: String,
+//    val moneyOutText: String,
+//    val moneyOutAmount: String,
+//    val balanceText: String,
+//    val balanceAmount: String,
+//    val transactionText: String,
+//    val transactionAmount: String,
+//    val dollarText: String,
+//    val dollarAmount: String,
+//    val dollarDate: String,
     val salaryOraText: String,
-    val salaryAmount: String
+    val salaryAmount: String,
+    val salaryDate:String
 //    val moneyinimg: String,
 //    val moneyintext: String,
 //    val moneyinamount: Int,

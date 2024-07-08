@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun createFirstEwallet(){
-        val onWallet1 = OnWallet("ebjhbj", "hhjn", "njn j", "jjknl", " fsree", "fevvrr", "knnkjn","unni","jfgkjb","30000","03-04-2040", "ssd", "100.000")
-        val onWallet2 = OnWallet("hvhgvjb", "jkdnkj", "knkj", "dc", "", "dddsf", "dsds","","cdd ","30000","03-04-2040", "dce", "100.000")
-        val onWallet3 = OnWallet("dbskj", "nkk", "n n", "dd", "dc", "cdc", "cwq","cdcdc","ce","30000","03-04-2040", "c", "100.000")
-        val onWallet4 = OnWallet("dsakj", "kmj", "fgfs", "fdd", "dc", "dcdcd", "dds","ddc","xcc","30000","03-04-2040", "fcf", "100.000")
-        val onWallet5 = OnWallet(" k k", "k k", "ddf", "df", "df", "dc", "ddd","","dd","30000","03-04-2040", "f", "100.000")
-        val onWallet6 = OnWallet("k", " kk", "dffd", "ddd", "ccd", "dds", "df","","dd","30000","03-04-2040", "fd", "100.000")
+        val onWallet1 = OnWallet("Salary", "24000", "23-04-2023")
+        val onWallet2 = OnWallet("Salary", "40000", "12-06-2023")
+        val onWallet3 = OnWallet("Salary", "19000", "12-3-2024")
+        val onWallet4 = OnWallet("Salary", "12000", "4-1-2022")
+        val onWallet5 = OnWallet("Salary", "13000", "5-12-2023")
+        val onWallet6 = OnWallet("Salary", "19000", "6-12-2023")
 
 
         val ewalletList= listOf(onWallet1,onWallet2,onWallet3,onWallet4,onWallet5,onWallet6)

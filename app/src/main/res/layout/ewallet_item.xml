@@ -14,148 +14,30 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Money In Section -->
-        <ImageView
-            android:id="@+id/moneyInIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/incomecheck" />
-
-        <TextView
-            android:id="@+id/moneyInLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Money in"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@id/moneyInIcon"
-            app:layout_constraintTop_toTopOf="@id/moneyInIcon"
-            android:layout_marginStart="8dp" />
-
-        <TextView
-            android:id="@+id/moneyInAmount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 42400"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/moneyInLabel"
-            app:layout_constraintTop_toBottomOf="@id/moneyInLabel" />
-
-        <!-- Money Out Section -->
-        <ImageView
-            android:id="@+id/moneyOutIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/expensecheck" />
-
-        <TextView
-            android:id="@+id/moneyOutLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Money Out"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@id/moneyOutIcon"
-            app:layout_constraintTop_toTopOf="@id/moneyOutIcon"
-            android:layout_marginEnd="8dp" />
-
-        <TextView
-            android:id="@+id/moneyOutAmount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 23700"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/moneyOutLabel"
-            app:layout_constraintTop_toBottomOf="@id/moneyOutLabel" />
-
-        <!-- Balance Section -->
-        <ImageView
-            android:id="@+id/balanceIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/moneyInAmount"
-            android:layout_marginTop="24dp"
-            app:srcCompat="@drawable/balancecheck" />
-
-        <TextView
-            android:id="@+id/balanceLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BALANCE"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@id/balanceIcon"
-            app:layout_constraintTop_toTopOf="@id/balanceIcon"
-            android:layout_marginStart="8dp" />
-
-        <TextView
-            android:id="@+id/balanceAmount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 18700"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/balanceLabel"
-            app:layout_constraintTop_toBottomOf="@id/balanceLabel" />
-
-        <!-- Transactions Section -->
-        <ImageView
-            android:id="@+id/transactionsIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/balanceIcon"
-            app:srcCompat="@drawable/transactioncheck" />
-
-        <TextView
-            android:id="@+id/transactionsLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TRANSACTIONS"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@id/transactionsIcon"
-            app:layout_constraintTop_toTopOf="@id/transactionsIcon"
-            android:layout_marginEnd="8dp" />
-
-        <TextView
-            android:id="@+id/transactionsAmount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/transactionsLabel"
-            app:layout_constraintTop_toBottomOf="@id/transactionsLabel" />
-
         <!-- Salary Section -->
         <ImageView
             android:id="@+id/salaryIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/balanceAmount"
-            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/income_trx_on" />
 
         <TextView
             android:id="@+id/salaryLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="Salary"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@id/salaryIcon"
-            app:layout_constraintTop_toTopOf="@id/salaryIcon"
-            android:layout_marginStart="8dp" />
+            app:layout_constraintTop_toTopOf="@id/salaryIcon" />
 
         <TextView
             android:id="@+id/salaryAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KES 42400"
+            android:text="24000"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/salaryLabel"
@@ -165,11 +47,45 @@
             android:id="@+id/salaryDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2023-07-08"
+            android:text="23/04/2023"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/salaryIcon"
-            app:layout_constraintBottom_toBottomOf="@id/salaryAmount" />
+            app:layout_constraintTop_toTopOf="@id/salaryIcon" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/salaryIcon"
+            app:srcCompat="@drawable/expense_check" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salary"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="50000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="2/04/2023"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salaryDate" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
